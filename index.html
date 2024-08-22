@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch and Earn$</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(231, 248, 248);
+        }
+        h1,h4{
+           text-align: center; 
+        }
+        .header a{
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .header{
+            display: flex;
+
+           border-bottom: solid thin lightblue;  
+        }
+        .pay{
+            text-align: center;
+            font-size: 19px;
+            margin-bottom: 10px;
+            border: solid thin grey;
+            background-color: rgb(212, 250, 250);
+        }
+        .footer{
+            text-align: center;
+            border-top: solid thin aqua;
+        }
+        #registerbtn{
+            border: none;
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #formcontainer{
+            text-align: center;
+        }
+        #backbtn{
+           margin-right: 30px;
+           background-color: rgb(241, 209, 102);
+           font-size: 18px;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           float: left;
+        }
+        #paidbtn{
+            background-color: rgb(190, 190, 190);
+            color: grey;
+            font-size: 18px;
+           border: none;
+           border-radius: 5px;
+           float: right;
+        }
+        #formcontainer{
+            border: solid thin #133d3d;
+            background-color: rgba(219, 240, 240, 0.877);
+            max-width: 350px;
+            padding: 30px;
+           margin: auto;
+           display: none;
+        }
+        #registered{
+            text-align: center;
+            display: none;
+
+        }
+
+    </style>
+    <header>
+        <div class="header">
+            <a style="margin-right: 100px;margin-left: 100px;" href="https://wa.me/message/CDMIBNBURZQ5C1">Register</a> <a style="margin-left: 300px;" href="https://chat.whatsapp.com/K8aca3pWRQR6JurldNAMl9
+            ">Whatsapp Group</a>
+        </div>
+    </header>
+    <main>
+       
+        <h1>Make Money For Watching Videos</h1>
+        <div style="text-align: center;">
+            <img style="width: 350px;" src="watch.jpg">
+        </div><br>
+        
+        <div class="pay">
+            <p>
+              Earning per hour: $1.56
+            </p>
+            <p>
+                 Minimum widthdrawal: $10.55
+            </p>
+            <p>
+                widthdrawal Methods: Paypal or Nigerian Bank Transfer.
+            </p>
+              
+            <p>
+                Registeration fee: &#8358;5,200 only.
+            </p>
+        </div>
+
+        <div>
+            <h4>
+                   Do not miss this opportunity to earn money while enjoying your favorite videos.
+            </h4>
+            <div style="text-align: center;">
+                <button type="submit" id="registerbtn">REGISTER NOW</button>
+            </div>
+            <div id="registered">
+                <h1 style="background-color: #047c04;color: white;">Congratulations!</h1>
+                <h3 style="background-color: orange;">click <a href="https://wa.me/message/CDMIBNBURZQ5C1">This Link</a> to contact director and get your WatchEarn Vaucher and start earning immediately.</h3>
+            </div>
+         <div id="formcontainer">
+       <h2>Register Here</h2>
+            <div id="registerform">
+                <form>    
+               <label for="email_mobile">Phone:</label>                
+              <input type="text" id="email_mobile" placeholder="Enter your whatsapp number">
+              <br><br>
+              <label for="name">Name:</label>
+              <input type="text" id="name" placeholder="Enter your name">
+                    
+              <p>Pay the sum of &#8358;5,200 to the account below:</p>
+              <p>
+                Bank: Opay. <br>
+                Account Name: Friday Emeka. <br>
+                Account Number: 9035950685.
+              </p>
+
+              
+              <button id="backbtn">Back</button> <button type="button" id="paidbtn">I have Paid</button>
+                </form>
+            </div>
+           
+            
+        </div>
+           
+            <h3 style="text-align: center; color: orange; background-color: green;">
+                Contact Director on the whatsapp Button below.
+            </h3>
+        </div>
+
+         <div>
+            <a style="text-decoration: none;font-size: 19px;" href="https://wa.me/message/CDMIBNBURZQ5C1">Contact Us<img style="width: 70px;" src="whatsapp.png"></a>    
+       
+         </div>
+        <div style="float: right;margin-right: 100px;">
+            <a href="https://t.me/leakedsecret_TV"><img style="width: 100px;" src="tchannel.jpeg"></a>
+        </div>
+        <div style="position: absolute;left: 300px;display: none; text-align: center; background-color: rgb(22, 231, 231);border: solid thin darkcyan;float: right;" id="advert">
+            <h2 style="background-color: white;"> We post Naughty Sexy Girls on our whatsapp tv
+                <br><br>
+                Say hi on Whatsapp: +2349137608452
+            </h2>
+            
+                        
+            <img style="width: 85%;" src="lstv.gif"><br>
+            <button style="float: right; font-size: 15px;background-color: brown;" id="close">Close</button>
+            
+            
+        </div>
+
+
+
+    </main>
+    
+<footer>
+    <div class="footer">
+        <h3>Advertisement:</h3>
+        <button type="submit" id="submitbtn"><img style="width: 100px;" src="lstv.gif"><br>Say hi on Whatsapp: +2349137608452</button> 
+    </div>
+</footer>
+<script>
+    
+    const advert = document.getElementById("advert");
+    const submitbtn = document.getElementById("submitbtn").onclick = function(){
+        advert.style.display = "block";
+    }
+    const close = document.getElementById("close").onclick = function(){
+        advert.style.display = "none";
+}
+let paidbtn = document.getElementById("paidbtn");
+let formcontainer = document.getElementById("formcontainer");
+const registerbtn = document.getElementById("registerbtn").onclick = function(){
+    formcontainer.style.display = "block";
+    paidbtn.disabled = true;
+    registered.style.display = "none";
+    setTimeout(function(){
+        paidbtn.style.backgroundColor = "rgba(56, 226, 56, 0.836)";
+        paidbtn.style.cursor = "pointer";
+        paidbtn.style.color = "white";
+        paidbtn.disabled = false;
+    },10000);
+
+    
+}
+const backbtn = document.getElementById("backbtn").onclick = function(){
+    formcontainer.style.display = "none";
+}
+let registered = document.getElementById("registered");
+let email_mobile = document.getElementById("email_mobile");
+let name = document.getElementById("name");
+paidbtn.onclick = function(){
+ if(name.value == ""  || email_mobile.value == ""){
+    alert("Please enter your name and Whatsapp Number!");
+ }else{
+    formcontainer.style.display = "none";
+    registered.style.display = "block";
+ }
+
+
+}
+
+</script>
+</body>
+</html>
